@@ -11,13 +11,13 @@ nav{height:50px;background-color:#212121}
 .subheader_text{margin-top:6px;font-weight:300;font-size:13px;color:#fff;opacity:.5}
 .subheader_call{display:block;margin-top:22px;font-weight:300;font-size:12px;text-align:right;color:#fff}
 .subheader_phone{display:block;font-weight:400;font-size:22px;text-align:right;text-transform:uppercase;text-decoration:none;color:#fff}
-.subheader_btn{display:block;margin-top:22px;width:172px;height:46px;background-image:-webkit-gradient(linear,left bottom,left top,from(#1eacc7),to(#4ce2ff));background-image:linear-gradient(0deg,#1eacc7 0,#4ce2ff 100%);-webkit-box-shadow:1px 1px 0 rgba(0,0,0,.21);box-shadow:1px 1px 0 rgba(0,0,0,.21);border:none;border-radius:4px;font-weight:400;font-size:14px;text-align:center;text-transform:uppercase;text-shadow:1px 1px 0 rgba(0,0,0,.21);color:#ffff}
+.subheader_btn{display:block;margin-top:22px;width:172px;height:46px;background-image:-webkit-gradient(linear,left bottom,left top,from(#1eacc7),to(#4ce2ff));background-image:linear-gradient(0deg,#1eacc7 0,#4ce2ff 100%);-webkit-box-shadow:1px 1px 0 rgba(0,0,0,.21);box-shadow:1px 1px 0 rgba(0,0,0,.21);border:none;border-radius:4px;font-weight:400;font-size:14px;text-align:center;text-transform:uppercase;text-shadow:1px 1px 0 rgba(0,0,0,.21);color:#fff}
 .subheader_btn:hover{background-image:none;background-color:#1eacc7}
 .promo{min-height:800px;background:url(../img/bg/uber_bg.png) center center/cover no-repeat;padding:205px 0 135px 0}
 .promo_header{margin:0;margin:0;font-weight:700;font-size:60px;line-height:60px;text-align:center;text-transform:uppercase;color:#fff}
 .promo_subheader{margin:0;margin-top:20px;font-weight:700;font-size:36px;line-height:36px;text-align:center;text-transform:uppercase;color:#fff}
 .promo_descr{margin-top:30px;font-weight:300;font-size:18px;line-height:24px;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;color:#fff}
-.promo_btn{display:block;margin:115px auto 186px auto;width:259px;height:63px;background:-webkit-gradient(linear,left bottom,left top,from(#1eacc7),to(#4ce2ff));background:linear-gradient(0deg,#1eacc7 0,#4ce2ff 100%);-webkit-box-shadow:inset 0 -4px 0 rgba(0,0,0,.12);box-shadow:inset 0 -4px 0 rgba(0,0,0,.12);border:none;border-radius:4px;font-weight:400;font-size:18px;text-align:center;text-transform:uppercase;text-shadow:1px 1px 0 rgba(0,0,0,.21);color:#ffff}
+.promo_btn{display:block;margin:115px auto 186px auto;width:259px;height:63px;background:-webkit-gradient(linear,left bottom,left top,from(#1eacc7),to(#4ce2ff));background:linear-gradient(0deg,#1eacc7 0,#4ce2ff 100%);-webkit-box-shadow:inset 0 -4px 0 rgba(0,0,0,.12);box-shadow:inset 0 -4px 0 rgba(0,0,0,.12);border:none;border-radius:4px;font-weight:400;font-size:18px;text-align:center;text-transform:uppercase;text-shadow:1px 1px 0 rgba(0,0,0,.21);color:#fff}
 .promo_btn:hover{background-image:none;background-color:#1eacc7}
 .label{position:relative;margin:0 auto;width:115px;height:27px;background-color:#000;font-weight:400;font-size:11px;line-height:29px;text-align:center;text-transform:uppercase;color:#fff;z-index:2}
 .label_white{background-color:#fff;color:#000}
@@ -26,7 +26,7 @@ nav{height:50px;background-color:#212121}
 .subtitle{position:relative;font-weight:300;font-size:17px;text-align:center;color:#222;z-index:2}
 .subtitle_white{color:#fff}
 .advantages{padding:20px 0 64px 0}
-.advantages_item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:26px}
+.advantages_item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;margin-top:26px}
 .advantages_round{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:25px;width:116px;height:116px;background-color:#1eacc7;border-radius:100%}
 .advantages_descr{width:372px;font-weight:300;font-size:15px;line-height:21px;color:#202020}
 .advantages span{font-weight:400;line-height:21px;font-size:18px;color:#1eacc7}
@@ -56,9 +56,9 @@ nav{height:50px;background-color:#212121}
 .require_list li::before{content:"";display:block;position:absolute;left:-32px;top:3px;width:21px;height:20px;background:url(../icons/check_blue.png) center center/cover no-repeat}
 .require_descr{margin-top:25px;font-weight:300;font-size:17px;color:#1ca8c3}
 .require .warning .require_title{color:#ff5656}
-.require .warning li::before{background:url(../icons/check_red.png)}
+.require .warning li::before{background-image:url(../icons/check_red.png);background-position:center center;background-size:cover;background-repeat:no-repeat}
 .world{position:relative;min-height:717px;padding:50px 0 25px 0;background-color:#080810}
-.world_img{position:absolute;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.world_img{position:absolute;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:100%}
 .world_cities{position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:48px;font-weight:300;font-size:15px;text-align:center;text-transform:uppercase;color:#1fbad6;text-decoration:none}
 .world_cities:hover{color:#1fbad6;text-decoration:underline}
 footer{min-height:155px;padding:10px 22px 10px 22px}
@@ -85,4 +85,32 @@ footer a:hover{text-decoration:underline}
 .menu_link{font-size:13px}
 .promo_header{font-size:56px}
 .promo_subheader{font-size:34px}
+.advantages_descr{width:315px}
+.mobile_item{width:100%;height:260px}
+.world{background:url(../img/bg/world_bg.png) center center/cover no-repeat}
+.world_img{display:none}
+}
+@media (max-width:991px){
+.menu_item{padding-right:9px}
+.menu_link{font-size:10px}
+.subheader_logo{margin-top:22px}
+.subheader_logo img{width:100%}
+.subheader_text{font-size:12px}
+.subheader_phone{margin-top:3px;font-size:21px}
+.subheader_btn{margin-top:28px;width:140px;height:40px;font-size:13px}
+.promo{padding:180px 0 90px 0}
+.promo_header{font-size:41px}
+.promo_subheader{font-size:26px}
+.promo_btn{margin:115px auto}
+.title{font-size:37px}
+.subtitle{font-size:15px}
+.advantages_item{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.advantages_round{margin-bottom:10px}
+.mobile{padding-bottom:50px;min-height:800px}
+.mobile_item{width:100%;height:200px}
+.mobile_item_subtitle{font-size:16px}
+.footer_wrapper>div:nth-child(odd){width:20%}
+.footer_wrapper>div:nth-child(even){width:60%}
+.footer_stores{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+.footer_stores img{margin-bottom:3px}
 }

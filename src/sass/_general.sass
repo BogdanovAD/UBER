@@ -1,3 +1,12 @@
+=btn_hover
+    &:hover
+        background-image: none
+        background-color: $main-color
+    
+$main-color: #1eacc7
+$second-color: #ff5656
+
+    
 header
     position: fixed
     width: 100%
@@ -81,7 +90,7 @@ nav
         text-align: center
         text-transform: uppercase
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-        color: #ffff
+        color: #fff
         +btn_hover
 		
 	  
@@ -135,8 +144,9 @@ nav
         text-align: center
         text-transform: uppercase
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-        color: #ffff
+        color: #fff
         +btn_hover
+
 
 
 .label
@@ -186,7 +196,7 @@ nav
     &_item
         display: flex
         justify-content: center
-        align-items: center
+        align-items: flex-start
         margin-top: 26px
 
     &_round
@@ -347,7 +357,10 @@ nav
             color: $second-color
         li
             &::before
-                background: url(../icons/check_red.png)
+                background-image: url(../icons/check_red.png)
+                background-position: center center
+                background-size: cover
+                background-repeat: no-repeat
 
 .world
     position: relative
@@ -359,6 +372,7 @@ nav
         top: 0
         left: 50%
         transform: translateX(-50%)
+        width: 100%
     &_cities
         position: absolute
         left: 50%
