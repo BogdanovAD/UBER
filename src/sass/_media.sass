@@ -24,6 +24,17 @@
         background: url(../img/bg/world_bg.png) center center/cover no-repeat
         &_img
             display: none
+    .footer
+        &_wrapper
+            >div
+                &:nth-child(odd)
+                    width: 20%
+                &:nth-child(even)
+                    width: 60%
+        &_stores
+            flex-wrap: wrap
+            img
+                margin-bottom: 3px
 
 @media ( max-width: 991px )
     .menu
@@ -50,7 +61,6 @@
 
     .promo
         padding: 180px 0 90px 0
-
         &_header
             font-size: 41px
         &_subheader
@@ -80,6 +90,10 @@
             &_subtitle
                 font-size: 16px
 
+    .choice
+        img
+            width: 100%
+
     .footer
         &_wrapper
             >div
@@ -88,7 +102,207 @@
                 &:nth-child(even)
                     width: 60%
         &_stores
-            flex-direction: column
-            align-items: flex-end
+            flex-wrap: wrap
             img
                 margin-bottom: 3px
+
+
+@media ( max-width: 767px )
+    header
+        position: static
+        z-index: 1
+    .menu
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        position: fixed
+        top: 0px
+        left: -100%
+        width: 50%
+        height: 100vh
+        background-color: rgba(0,0,0,.95)
+        z-index: 3
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding: 0px
+            margin-bottom: 25px
+            border: none
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 20px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg)
+    .xs_hidden, .subheader_text
+        display: none
+    .xs_visible
+        display: block
+    .subheader
+        &_phone
+            text-align: center
+            display: block
+            margin-top: 10px
+        &_btn
+            display: block
+            margin: 0 auto
+            width: 200px
+            height: 40px
+            border-radius: 4px
+            font-size: 14px
+    .promo
+        min-height: 430px
+        &_header
+            font-size: 62px
+            line-height: 55px
+        &_subheader
+            font-size: 35px
+            line-height: 40px
+        &_descr
+            display: none
+        &_btn
+            margin: 75px auto
+    .title
+        font-size: 16px
+    .advantages
+        &_descr
+            width: 90%
+    .mobile
+        &_item
+            width: 80%
+            height: 360px
+            &_subtitle
+                font-size: 28px
+    .choice
+        background-image: none
+        background-color: #000
+        min-height: 400px
+        &_black
+            display: none
+        &_title, &_subtitle
+            display: none
+        &_text
+            margin-top: 30px
+            color: #fff
+            font-size: 17px
+            line-height: 24px
+    .world
+        min-height: 400px
+    .footer
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            >div
+                width: 60% !important
+                &:nth-child(1)
+                    order: 2
+                &:nth-child(2)
+                    order: 1
+                &:nth-child(3)
+                    order: 3
+        &_social
+            justify-content: center
+            margin: 15px auto
+        &_links
+            width: 100%
+            &_main
+                justify-content: space-evenly
+                padding: 0
+                flex-wrap: wrap
+                a 
+                    font-size: 14px
+                    margin: 7px
+            &_sub 
+                flex-wrap: wrap
+                justify-content: center
+                a 
+                    margin: 7px
+            &_lang 
+                margin-top: 10px
+        &_stores
+            flex-direction: row
+            justify-content: center
+
+@media ( max-width: 575px )
+    .menu
+        width: 80%
+        padding: 0px 30px
+        &_item
+            width: 100%
+        &_link
+            display: block
+            font-size: 20px
+    .subheader
+        &_logo
+            margin-top: 30px
+        &_phone
+            font-size: 16px
+            margin-top: 15px
+        &_btn
+            width: 125px
+            height: 25px
+            font-size: 12px
+            margin-top: 10px
+    .promo
+        min-height: 400px
+        padding-bottom: 0
+        &_header
+            font-size: 30px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            line-height: 23px
+        &_btn
+            width: 210px
+            height: 50px
+            font-size: 16px
+    .mobile
+        &_item
+            width: 90%
+            height: 290px
+            padding: 85px 30px
+            &_subtitle
+                font-size: 18px
+    .choice
+        padding-bottom: 30px
+    .require
+        padding: 30px 15px
+    .footer
+        &_divider
+            width: 255px
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            >div
+                width: 100% !important
+                &:nth-child(1)
+                    order: 2
+                &:nth-child(2)
+                    order: 1
+                &:nth-child(3)
+                    order: 3
+        &_links
+            &_main
+                a
+                    font-size: 12px
+    

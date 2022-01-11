@@ -13,8 +13,12 @@ header
     z-index: 100
 
 nav
+    position: relative
     height: 50px
     background-color: #212121
+
+.hamburger
+    display: none
 
 .menu
     display: flex
@@ -40,6 +44,7 @@ nav
         padding-right: 40px
         &:last-child
             border: none
+
 
 .subheader
     min-height: 87px
@@ -92,9 +97,9 @@ nav
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
         color: #fff
         +btn_hover
-		
-	  
-	  
+
+.xs_visible
+    display: none	  
 
 .promo
     min-height: 800px
@@ -293,7 +298,7 @@ nav
 
 .choice
     position: relative
-    min-width: 896px
+    min-height: 896px
     background: url(../img/bg/mobile_bg.png) center center/cover no-repeat
     padding: 54px 0 138px 0
     &_img
